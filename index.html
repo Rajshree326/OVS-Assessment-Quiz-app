@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>MCQ Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div id="question-1">
+            <h1>Question 1</h1>
+            <p>What is the color of a leaf?</p>
+            <ul>
+                <li><label><input type="radio" name="q1" value="Red"> Red</label></li>
+                <li><label><input type="radio" name="q1" value="White"> White</label></li>
+                <li><label><input type="radio" name="q1" value="Brown"> Brown</label></li>
+                <li><label><input type="radio" name="q1" value="Green"> Green</label></li>
+            </ul>
+            <button onclick="checkAnswer(1)">Next</button>
+        </div>
+        <div id="question-2" style="display: none;">
+            <h1>Question 2</h1>
+            <p>Among these, which one is the largest Political Party in India?</p>
+            <ul>
+                <li><label><input type="radio" name="q2" value="BJP"> BJP</label></li>
+                <li><label><input type="radio" name="q2" value="BSP"> BSP</label></li>
+                <li><label><input type="radio" name="q2" value="AAP"> AAP</label></li>
+                <li><label><input type="radio" name="q2" value="SP"> SP</label></li>
+            </ul>
+            <button onclick="checkAnswer(2)">Submit</button>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Result</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
